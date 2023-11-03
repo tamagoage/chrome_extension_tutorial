@@ -2,7 +2,7 @@ chrome.runtime.onMessage.addListener((request, options) => {
     console.log("contentscript");
     console.log(options);
 
-    if (request.name === "displayUrl:content.script") {
+    if (request.name === "displayUrl:contentScripts") {
         const body = document.querySelector("body");
         const addElement = document.createElement("h1");
 

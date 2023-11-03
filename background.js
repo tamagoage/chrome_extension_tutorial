@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener((request) => {
 
                 // content.scriptへデータを送る
                 chrome.tabs.sendMessage(id, {
-                    name: "displayUrl:content",
+                    name: "displayUrl:contentScripts",
                     data: {
                         url,
                     },
